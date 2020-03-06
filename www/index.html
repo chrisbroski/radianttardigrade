@@ -6,14 +6,21 @@
 <title>Virtual Expanses</title>
 
 <style>
+@font-face {
+    font-family: 'Loopiejuice-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('img/Loopiejuice-Regular.woff') format('woff');
+}
+
 * {box-sizing: border-box; }
 html {padding: 10px 10px 200px; font-family: droid sans, sans-serif; }
 body {margin: 0 auto; max-width: 580px; }
 article > *:first-child {margin-top: 0; }
 li {font-size: 16px; margin-bottom: 0.3em; line-height: 1.4em; }
-h1 {font-size: 36px; }
-h2 {font-size: 28px; padding-bottom: 0.2em; border-bottom: 1px solid #bbb; }
-h3 {font-size: 24px; }
+h1 {font-family: 'Loopiejuice-Regular'; font-size: 42px; }
+h2 {font-family: 'Loopiejuice-Regular'; font-size: 32px; }
+h3 {font-size: 22px; }
 h4 {font-size: 20px; padding: 0.2em; background: #eee; }
 p, h5 {font-size: 17px; line-height: 1.4em; }
 pre {padding: 1em; background: #eee; overflow: auto; }
@@ -25,20 +32,52 @@ table td {border: 1px solid #ddd; padding: 6px 13px; }
     width: 512px; height: 288px;
     background: #ddd;
 }
+#scrolly {
+    max-width: 580px;
+    overflow: auto;
+    height: 325px;
+    white-space: nowrap;
+}
+#scrolly img {
+    width: 560px;
+    height: auto;
+}
+
+#iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+#iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
 </style>
 
 <body>
 <article>
-<h1>Virtual Expanses</h1>
-<p>Project description (concept)
-<h2>Video of robot / VR</h2>
-<div id="vid"></div>
-<h2>Bios</h2>
+<h1>Virtual Expanses, In Miniature</h1>
+<p>A proposed Dlectricity 2020 project.<br><br>
+
+<div id="iframe-container"><iframe src="https://www.youtube.com/embed/5DSLZEEWCMY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<h2>Concept Sketches</h2>
+<div id="scrolly"><img src="/img/Tent1.jpg"><img src="/img/Table_V1.jpg"><img src="/img/Interaction_1.jpg"></div>
+<h2>Team</h2>
 <h3>Melissa Duckworth</h3>
 <h3>Brendan Quinn</h3>
 <h3>Chris Broski</h3>
-<h2>Concept Sketches</h2>
+<h3>Doug Drazin Quinn</h3>
+<h3>Jesse Dorsey</h3>
+
 <h2>Mini-robot Design</h2>
+<p><img src="/img/bot1.jpg" style="width: 100%;"></p>
 <ul>
 <li>Zumo
 <li>Mini gear motors
